@@ -1,0 +1,208 @@
+{% extends 'solapp/base.html' %}
+{% block content %}
+<style>
+.costumer-satis{
+                height:400px;
+                display:grid;
+                {% load static %}
+                background-image: url("{% static "images/about.png" %}");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
+              }
+                mark{
+              background-color:grey;
+              color: white;
+               opacity: .8;
+              }
+              .main-title{
+  color: darkred;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+.container1{
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 640px){
+  .container1{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container1{
+    width: 33.33333%;
+  }
+}
+
+.container1 .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+</style>
+<div class="costumer-satis">
+ <div class="cs-texts"><h3 style="text-align:center; padding-top:100px;"><mark> ABOUT SEC (Sol Education Consultancy Ptv Ltd.)
+   </mark></h3>
+  </div>
+</div>
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row halign-wrapper">
+
+              <div class="col s4">
+                  <h4 style="font-style:oblique;font-size:22px;"><b>Among much Japanese language<br> school in Nepal we are working in the<br> sector of student exchange and<br> fulfillment of the needs of all those<br> students who want to gain their<br> further study in the land of<br> technologies and opportunities.<br> Japan and Nepal had played drastic<br> role in the sector of world peace and<br> gaining a brotherhood relation<br> between their people.</b></h4>
+              </div>
+               <div class="col s8">
+                   <p>So why we are established here not only to send Nepalese students to Japan but also to make them known about its essence. And we are playing and we have to play huge role to expand Japanese language and culture in Nepal and make Japanese people to know about our language and culture too. At the time of registration of this school around 2006 we were worried with the establishment in this competitive time but we don't know how time passed by and we succeed to exchange around 300 students at Japan.<br><br>
+But we still think that we are not that much grown up to say that we are the only one because rather than focusing to increase the number of students only we use to focus to give them quality counseling and think from students side so why they can feel easy after they reach Japan too. Because they can easily dilute them in the Japanese society with the education and training that they get from Sol Education Consultancy (SEC).<br><br>
+Those who are planning to learn Japanese could have their own aim. Whatever their purposes are, their common and principle purpose is to communicate with Japanese people. For that you should learn not only Japanese language but Japanese culture too. Here the culture means customs, traditions, thinking style and so on. Someone may need Japanese to stay in Japan, and the other may need this language to do business with Japanese people. Anyway if you can communicate with Japanese people nicely, you can stay easily in Japan and get various opportunities. There for SEC also focus on cultural exchange between Nepal and Japan. And we provide Nepali language class for foreigners too. According to this concept, SEC encourage those who try to go to Japan as Student and those who are planning for the same or belonging in Tourism Sector.<br><br>
+                       You all are welcome to our school and have a cool and hearty counseling and end your queries in this cozy environment.</p>
+               </div></div></div></div>
+<div class="service grey lighten-5">
+    <ul class="collection">
+
+   <li class="collection-item avatar">
+        <center><h3 style="font-style:oblique;color:darkred;"><b>Services</b></h3>
+      <i style="color:darkred;" class="material-icons">check</i>
+      <span class="title" style="font-size:20px;font-style:oblique;color:green;">Japanese Language class for any purpose</span>
+       <br>  <i style="color:darkred;" class="material-icons">check</i>
+      <span class="title" style="font-size:20px;font-style:oblique;color:green;">Student Visa application process</span>
+         <br>  <i style="color:darkred;" class="material-icons">check</i>
+      <span class="title" style="font-size:20px;font-style:oblique;color:green;">Translation: Nepali to Japanese , English to Japanese</span>
+         <br>  <i style="color:darkred;" class="material-icons">check</i>
+      <span class="title" style="font-size:20px;font-style:oblique;color:green;">Cultural exchange program</span>
+         <br>  <i style="color:darkred;" class="material-icons">check</i>
+      <span class="title" style="font-size:20px;font-style:oblique;color:green;">Nepali Language classes for foreigners</span>
+         <br>  <i style="color:darkred;" class="material-icons">check</i>
+      <span class="title" style="font-size:20px;font-style:oblique;color:green;">Counseling for study in Japan</span>
+         <br>  <i style="color:darkred;" class="material-icons">check</i>
+      <span class="title" style="font-size:20px;font-style:oblique;color:green;">Private or special classes</span>
+         <br>  <i style="color:darkred;" class="material-icons">check</i>
+      <span class="title" style="font-size:20px;font-style:oblique;color:green;">Strict document checking</span>
+   </center></li>
+    </ul>
+</div>
+<div class="team grey lighten-5">
+<h3 class="main-title">Core Management Team</h3>
+    <div class="container1">
+
+  <div class="content">
+          <div class="content-overlay"></div>
+      <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">President</h3>
+        <p class="content-text">Hi, I am Madan.</p>
+      </div>
+     </div>
+</div>
+     <div class="container1">
+
+  <div class="content">
+          <div class="content-overlay"></div>
+      <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Manager</h3>
+        <p class="content-text">Hi, I am Renu.</p>
+      </div>
+     </div>
+</div>
+     <div class="container1">
+
+  <div class="content">
+          <div class="content-overlay"></div>
+      <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Developer</h3>
+        <p class="content-text">Hi, I am Pawan.</p>
+      </div>
+     </div>
+</div>
+    </div>
+{% endblock %}
