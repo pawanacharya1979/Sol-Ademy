@@ -1,3 +1,43 @@
 {% extends 'solapp/base.html' %}
 {% block content %}
+<style>
+.costumer-satis{
+                height:389px;
+                display:grid;
+                {% load static %}
+                background-image: url("{% static "images/gallery.png" %}");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
+              }
+                mark{
+              background-color:grey;
+              color: white;
+               opacity: .8;
+              }
+              .container2{
+              padding-top:10px;
+              }
+</style>
+<div class="costumer-satis">
+ <div class="cs-texts"><h3 style="text-align:center; padding-top:100px;font-style:oblique;"><mark> Gallery (Sol Education Consultancy)
+   </mark></h3>
+  </div>
+</div>
+<div class="container2 grey lighten-4">
+<div class="row">
+<div class="col s3 m3"><img src="https://source.unsplash.com/800x600/?beach" alt="" class="materialboxed responsive-img"></div>
+<div class="col s3 m3"><img src="https://source.unsplash.com/800x600/?sand" alt="" class="materialboxed responsive-img"></div>
+<div class="col s3 m3"><img src="https://source.unsplash.com/800x600/?boat" alt="" class="materialboxed responsive-img"></div>
+  <div class="col s3 m3"><img src="https://source.unsplash.com/800x600/?cruise" alt="" class="materialboxed responsive-img"></div>
+</div>
+    <div class="row">
+    <div class="col s3 m3"><img src="https://source.unsplash.com/800x600/?cruise" alt="" class="materialboxed responsive-img"></div>
+<div class="col s3 m3"><img src="https://source.unsplash.com/800x600/?beach" alt="" class="materialboxed responsive-img"></div>
+<div class="col s3 m3"><img src="https://source.unsplash.com/800x600/?sand" alt="" class="materialboxed responsive-img"></div>
+<div class="col s3 m3"><img src="https://source.unsplash.com/800x600/?boat" alt="" class="materialboxed responsive-img"></div>
+
+</div>
+</div>
 {% endblock %}
