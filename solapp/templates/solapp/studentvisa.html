@@ -1,0 +1,62 @@
+{% extends 'solapp/base.html' %}
+{% block content %}
+<style>
+.costumer-satis{
+                height:389px;
+                display:grid;
+                {% load static %}
+                background-image: url("{% static "images/studentvisa.jpeg" %}");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
+              }
+                mark{
+              background-color:grey;
+              color: white;
+               opacity: .8;
+              }
+              .visa{
+                        padding-top:40px;
+              }
+</style>
+<div class="costumer-satis">
+ <div class="cs-texts"><h3 style="text-align:center; padding-top:100px;font-style:oblique;"><mark> Student Visa
+   </mark></h3>
+  </div>
+</div>
+                  <h4 style="font-style:oblique;font-size:22px;padding-left:40px;"><b>SEC provide application process of student Visa. It is sad <br>to say that many of Nepali people have already entered <br>Japan and been staying there.</b></h4>
+<div class="visa">
+    <h4 style="font-style:oblique;font-size:22px;padding-left:40px;color:darkred;">Qualification</h4>
+<p style="font-style:oblique;padding-left:40px;color:darkbrown;">Academic background:--> above +2 / intermediate<br>
+Age:--> below 26 years old</p><hr>
+<h4 style="font-style:oblique;font-size:22px;padding-left:40px;color:darkred">Required Documents</h4>
+    <p style="font-style:oblique;padding-left:40px;color:darkbrown;"><b>Documents to certificate applicant</b></p>
+<ul>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">All of academic certificates with transcripts</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Photocopy of original citizenship certificate and English translation of that</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Passport photocopy if you have issued passport</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Essay (purpose of study in Japan)</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Recommendation letter from campus or working place which the student belongs</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Gap certificate if the student has some gap in academic history</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Other document may be required</li></ul>
+<br>
+     <p style="font-style:oblique;padding-left:40px;color:darkbrown;"><b>Documents to certificate sponsor</b></p>
+<ul>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Bank Balance certificate with statement for 3 years
+</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Annual income certificate for 3 years</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Occupation letter if your sponsor is employee</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Company registration certificate if your sponsor runs company by himself
+</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Other supported documents to prove how income generated</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Property valuation</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Tax clearance for 3 years</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Relationship certificate to make sure the relation between the student and his sponsor</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">Sponsor letter</li>
+</ul><br>
+ <center>   <h4 style="font-style:oblique;font-size:22px;padding-left:40px;color:darkred;">Please visit SEC for counseling with detail information.</h4>
+ </center><hr>
+
+</div>
+    {% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'solapp/base.html' %}
+{% block content %}
+<style>
+.costumer-satis{
+                height:389px;
+                display:grid;
+                {% load static %}
+                background-image: url("{% static "images/smart-class.jpg" %}");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
+              }
+                mark{
+              background-color:grey;
+              color: white;
+               opacity: .8;
+              }
+
+  @media only screen and (max-device-width: 480px) {
+.row .col.s6 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+  }
+</style>
+<div class="costumer-satis">
+ <div class="cs-texts"><h3 style="text-align:center; padding-top:100px;font-style:oblique;"><mark> Classes
+   </mark></h3>
+  </div>
+</div>
+<div class="block grey lighten-5">
+     <p style="font-style:oblique;padding-left:40px;color:darkbrown;">Although our fix sessions are written above because our regular class are scheduled for student visa apply process, if you desire Japanese class without our process and more than 5 persons are gathered at that time, we can start your group class your desired time. All of student visa applicants are required to finish minimum 150hrs language course at the time when they apply, that is why those students have to join our fixed session as below.
+</p>
+</div>
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row halign-wrapper">
+
+              <div class="col s6">
+                  <h4 style="font-style:oblique;font-size:15px;"><b>NOTE : ALL THE STUDENT MUST ATTAIN THE CORRESPONDING FOLLOWING<br> JAPANESE LANGUAGE COURSE AFTER THE ARRIVAL IN JAPAN.</b></h4>
+              <ul>
+               <hr>   <li>
+                      <b>For JAN Intake:</b>
+                     1 yr 3 months Japanese Language Course
+                  </li>
+
+                  <hr>   <li>
+                  <b> For APR Intake:</b>
+2 yrs Japanese Language Course
+
+                  </li>
+                   <hr>   <li>
+                      <b>For JULY Intake:
+</b>
+                     1 yr 9 months Japanese Language Course
+                  </li>
+                  <hr>   <li>
+                      <b>For OCT Intake:</b>
+                    1 yr 6 months Japanese Language Course
+
+                  </li>
+              </ul>
+
+              </div>
+               <div class="col s6">
+                   {% load static %}
+              <img src="{% static "images/read.png" %}" alt="" > <!-- notice the "circle" class -->
+                    </div></div></div></div>
+<div class="timing">
+    <h4 style="font-style:oblique;font-size:22px;padding-left:40px;color:darkred">Class Timing</h4>
+    <p style="font-style:oblique;padding-left:40px;color:darkbrown;"><b>Morning Class</b></p>
+<ul>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">6:00 am to 7:30 am</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">7:30 am to 9:00 am</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">9:00 am to 10:30 am</li>
+    </ul><br>
+<p style="font-style:oblique;padding-left:40px;color:darkbrown;"><b>Day Class</b></p>
+<ul>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">2:00 pm to 3:30 pm</li>
+    <li style="font-style:oblique;padding-left:40px;color:darkbrown;">3:30 pm to 5:00 pm</li>
+    </ul>
+    <center>   <h4 style="font-style:oblique;font-size:22px;padding-left:40px;color:darkred;">Please visit SEC for counseling with detail information.</h4>
+ </center><hr>
+</div>
+{% endblock %}

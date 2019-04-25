@@ -1,0 +1,137 @@
+{% extends 'solapp/base.html' %}
+{% block content %}
+<style>
+.costumer-satis{
+                height:389px;
+                display:grid;
+                {% load static %}
+                background-image: url("{% static "images/fee.jpg" %}");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
+              }
+                mark{
+              background-color:grey;
+              color: white;
+               opacity: .8;
+              }
+              .visa{
+                        padding-top:40px;
+              }
+              table {
+    width: 50%;
+    display: table;
+    position:center;
+    border:1px solid;
+}
+  @media only screen and (max-device-width: 480px) {
+     table {
+    width: 100%;
+    display: table;
+    position:center;
+    border:1px solid;
+  }
+  }
+</style>
+<div class="costumer-satis">
+ <div class="cs-texts"><h3 style="text-align:center; padding-top:100px;font-style:oblique;"><mark> Courses & Fee Structure
+   </mark></h3>
+  </div>
+</div>
+<div class="block grey lighten-5">
+     <p style="font-style:oblique;padding-left:40px;color:darkbrown;">Although there are 51 administrative districts in Japan, everyone only try to go to big city like Tokyo, Osaka and so on. But other cities are not so much different from those big cities. In remote area, job opportunities are a little bit less or salary is a little less than those big cities, but living expenses like room rent are also less in remote areas. So SEC think wherever students go, the living condition is same. According to this policy, SEC made wide connections all over Japan. You can choose most suitable one from our various options. At first when you entered Japan, you have to learn Japanese language for 1, 2 year(s). It seems that to learn Japanese language again in Japan is wasting money and time, but fluent Japanese language skill is necessary to stay in Japan efficiently. There for SEC recommend this process.</p>
+</div>
+<div class ="table">
+<center>
+    <table>
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Courses</th>
+              <th>Remarks</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>GENERAL JAPANESE LANGUAGE - BASIC CLASS</td>
+            <td>180 hrs</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>GENERAL JAPANESE LANGUAGE - INTERMEDIATE CLASS</td>
+            <td>180 hrs</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>GENERAL JAPANESE LANGUAGE - ADVANCE CLASS</td>
+            <td>180 hrs</td>
+          </tr>
+         <tr>
+            <td>4</td>
+            <td>JLPT, NAT, TOP J, J-TEST PREPARATION</td>
+            <td>180 hrs Each Test</td>
+          </tr>
+        </tbody>
+    </table>
+<br><br><hr>
+     <table>
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Descriptions</th>
+              <th>Fee</th>
+              <th>Remarks</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Student Visa - Includes Language CLass</td>
+            <td>1Rs. 7,000/- for 6 Months</td>
+              <td>Study 1.5 hrs per day</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Language Class Only</td>
+            <td>Rs. 1,200/- per Month</td>
+              <td>Study 1.5 hrs per day</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Special Language CLass - Short Term Class</td>
+            <td>Rs. 7,000/- per Months</td>
+              <td>Study 24 hrs per Month</td>
+          </tr>
+         <tr>
+            <td>4</td>
+            <td>JLPT, NAT, TOP J, J-Test Preparation Class</td>
+            <td>Rs. 1,500 per Month</td>
+             <td>---</td>
+          </tr>
+        <tr>
+            <td>5</td>
+            <td>Admission Fee</td>
+            <td>Rs. 500/- One Time Fee</td>
+             <td>Includes Practice Books and Study Materials</td>
+          </tr>
+        <tr>
+            <td>6</td>
+            <td>Reference Books</td>
+            <td>MinnaNo Nihongo Part I & II</td>
+             <td>---</td>
+          </tr>
+        <tr>
+            <td>7</td>
+            <td>Reference Books</td>
+            <td>JLPT, NAT, TOP J, J-TEST PREPARATION BOOKS</td>
+             <td>---</td>
+          </tr>
+        </tbody>
+    </table>
+</center><hr>
+</div>
+{% endblock %}

@@ -46,3 +46,19 @@ def contactus(request):
     else:
         form = ContactForm()
     return render(request, 'solapp/contact.html', {'form': form})
+
+
+def studentvisa(request):
+    return render(request, 'solapp/studentvisa.html')
+
+
+def coursefee(request):
+    return render(request, 'solapp/coursefee.html')
+
+
+def classes(request):
+    return render(request, 'solapp/class.html')
+
+
+def visaprocess(request):
+    return render(request, 'solapp/visaprocess.html')

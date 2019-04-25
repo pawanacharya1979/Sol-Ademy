@@ -1,0 +1,118 @@
+{% extends 'solapp/base.html' %}
+{% block content %}
+<style>
+.costumer-satis{
+                height:389px;
+                display:grid;
+                {% load static %}
+                background-image: url("{% static "images/visa.jpg" %}");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
+              }
+                mark{
+              background-color:grey;
+              color: white;
+               opacity: .8;
+              }
+</style>
+<div class="costumer-satis">
+ <div class="cs-texts"><h3 style="text-align:center; padding-top:100px;font-style:oblique;"><mark>VISA Processing
+   </mark></h3>
+  </div>
+</div>
+<ul class="collapsible popout">
+    <li style="padding-top:10px; padding-bottom:10px; padding-left:17px; color:orange; font-size:20px;"><b>SEC provide application process of student Visa.</b></li>
+   <li style="padding-top:10px; padding-bottom:40px; padding-left:17px; color:darkred; font-size:17px; font-style:oblique;">click the below tab panel to know VISA PROCESSING STEPS</li>
+    <li>
+        <div class="collapsible-header yellow"><b>1. Student Counselling</b>
+           </div>
+      <div class="collapsible-body grey lighten-5"><span>School Counselling<br>
+About JAPAN<br>
+Career Counselling<br>
+Financial and Sponsor Counselling<br>
+Socio-Cultural Counselling<br>
+Documentation Counselling</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+      <div class="collapsible-header yellow"><b>2. Enroll in SEC & Attend Seminar</b></div>
+      <div class="collapsible-body grey lighten-5"><span>Join SEC<br>
+Start Studying Japanese Language Course<br>
+Minimum 6 months course<br>
+SEC will organize the seminar<br>
+Qualified Students will be informed to participate in Seminar</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+        <div class="collapsible-header yellow"><b>3. Interview & Selection</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+        Japanese School will take Skype Interview or Face to Face Interview<br>
+They will select the students</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+      <div class="collapsible-header yellow"><b>4. Attend in Exams</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+          After selection, attend for Japanese Language and General Knowlwdge Exam<br>
+Have to compulsary pass both the exams
+      </span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+        <div class="collapsible-header yellow"><b>5. Documentation and Verification Process</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+      Now Students will be informed for further processing<br>
+Provide Financial Documents<br>
+Provide Academic Documents<br>
+Provide Legal Documents<br>
+SEC will strictly check all the documents</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+        <div class="collapsible-header yellow"><b>6. Forward the Documents to JAPANESE School and Immigration</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+        Now Japanese School will check and verify the documents<br>
+School will forward the documents to respective Japanese immigration<br>
+Immigration Verifies all the documents</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+        <div class="collapsible-header yellow"><b>7. Certificate of Eligibility (COE)</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+      After verifying all the documents, immigration will provide COE<br>
+After fulfilling all the financial obligations, Japanese School will forward all the documents to our office<br>
+And then after we will provide those documents to the students</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+        <div class="collapsible-header yellow"><b>8. Apply for VISA</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+       Now students shall apply in Japanese Embassy located in Kathmandu for VISA<br>
+Embassy will take interview<br>
+After passing interview, Embassy will Issue VISA to the Students</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+        <div class="collapsible-header yellow"><b>9. Get the Ticket and go to JAPAN</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+       Get the Ticket and board to JAPAN
+</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+        <div class="collapsible-header yellow"><b>10. Interview with Airport Immigration</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+        After arriving in JAPAN, airport immigration will again take the interview
+</span></div>
+    </li></ul>
+<ul class="collapsible popout">
+    <li>
+        <div class="collapsible-header yellow"><b>11. Study in JAPAN</b></div>
+      <div class="collapsible-body grey lighten-5"><span>
+        After all your hard work and effort, now time has come to fulfill your dreams to study in JAPAN and your career begins from here. Study hard, work hard and be smart.
+</span></div>
+    </li></ul>
+<br>
+{% endblock %}
