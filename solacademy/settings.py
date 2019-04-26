@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&1sro@1)h5^#)pgs=k*@o3(p236id9w5_#s*l%99gu0^td%e5#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'sol-academy.herokuapp.com']
+ALLOWED_HOSTS = ['sol-academy.herokuapp.com']
 
 ########## EMAIL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#email-backend

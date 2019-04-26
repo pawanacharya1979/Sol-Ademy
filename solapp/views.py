@@ -42,7 +42,7 @@ def contactus(request):
             )
             email.send()
             messages.success(request, 'Thank You! for contacting us, we will get back to you soon.')
-            return HttpResponseRedirect('/contact/')
+            return HttpResponseRedirect('/contact-us/')
     else:
         form = ContactForm()
     return render(request, 'solapp/contact.html', {'form': form})
